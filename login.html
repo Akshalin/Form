@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body{
+            background-image: url(/assert/login3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .page{
+            border: 2px solid black;
+            border-radius:10px;
+            width:300px;
+            margin-left:200px;
+            margin-top: 50px;   
+        }
+        .login{
+            width:250px;
+            border-radius: 20px;
+        }
+        input[type="text"],input[type="password"],input[type="submit"]{
+            color: red;
+            margin:20px;
+            border-radius: 20px;
+            padding:10px;
+            font-size: 15px;
+        }
+        .sign{
+            margin-left: 100px;
+        }
+        h1{
+            margin-left: 50px;
+            color:rgb(100, 0, 75);
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Login</h1>
+        <div class="login">
+            <form action="beverages.html">
+                <input type="text" name="username"  placeholder="Enter your username" required><br>
+                <input type="password" name="psw" placeholder="Enter the password"required><br>
+                <input class="log" type="submit" value="Login">    
+            </form>
+        </div>
+        <div class="sign">
+            <form action="signup.html">
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

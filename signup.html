@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        body{
+            background-image: url(/assert/signup1.jpg);
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:100% 100%;
+        }
+        form{
+            border: 1px solid lightgrey;
+            width:600px;
+            padding:20px;
+            margin-left: 350px;
+            margin-top: 30px;
+            border-radius: 20px;
+        }
+        .details{
+            color:brown;
+            text-align:center;
+            font-size: 40px;
+        }
+        input[type="text"],input[type="number"],input[type="submit"],input[type="reset"],input[type="email"],input[type="date"],textarea{
+            padding:5px;
+            border-radius: 5px;
+            margin:5px;
+        }
+        label{
+            padding:5px;
+        }
+        input[type="submit"],input[type="reset"]{
+            border-radius: 30px;
+            background-color:honeydew;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="details">Signup form</h1>
+    <form action="beverages.html">
+        <input type="text" name="fn" placeholder="First name" required>
+        <input type="text" name="mn" placeholder="Middle name">
+        <input type="text" name="ln" placeholder="Last name" required><br>
+        <input type="date"><br>
+        <input type="number" name="age" placeholder="Age" min="20" step="2" required><br>
+        <input type="number" name="contact" placeholder="Enter the mobile number"><br>
+        <input type="email" name="mail Id" placeholder="Enter the mail Id" required><br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" id="m">
+        <label for="m">Male</label>
+        <input type="radio" name="gender" id="f">
+        <label for="f">Female</label>
+        <input type="radio" name="gender" id="o">
+        <label for="o">Others</label><br><br>
+        <input type="checkbox" id="n1" checked>
+        <label for="n1">SMS</label>
+        <input type="checkbox" id="n2">
+        <label for="n2">Mail</label><br>
+        <label>Technical Skills</label><br>
+        <label>Python</label><br>
+        <input type="range"><br>
+        <label>Java</label><br>
+        <input type="range"><br>
+        <textarea name="address" id="a" cols="60" rows="5" >Type your address</textarea><br>
+        <input type="submit" value="Signup">
+        <input type="reset">           
+    </form>
+</body>
+</html>
